@@ -2950,8 +2950,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
+var _client = require("react-dom/client");
+var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./Components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _body = require("./Components/Body");
@@ -2963,10 +2963,10 @@ const Footer = ()=>{
         children: [
             "Created By",
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                class: "fa-solid fa-heart"
+                className: "fa-solid fa-heart"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -2975,14 +2975,14 @@ const Footer = ()=>{
                 children: "ExWhyZeD"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                class: "fa-solid fa-copyright"
+                className: "fa-solid fa-copyright"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             year,
@@ -2993,19 +2993,19 @@ const Footer = ()=>{
                         children: "Fire"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 19,
+                        lineNumber: 20,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 18,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 5
     }, undefined);
 };
@@ -3018,32 +3018,35 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 31,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined));
 };
 _c1 = AppLayout;
-(0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+const container = document.getElementById("root");
+const root = (0, _client.createRoot)(container);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "src/App.jsx",
-    lineNumber: 37,
-    columnNumber: 17
-}, undefined), document.getElementById("root"));
+    lineNumber: 40,
+    columnNumber: 13
+}, undefined)); // const rootElement = document.getElementById("root");
+ // ReactDOM.render(<AppLayout />, rootElement);
 var _c, _c1;
 $RefreshReg$(_c, "Footer");
 $RefreshReg$(_c1, "AppLayout");
@@ -3053,7 +3056,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./Components/Header":"9Dt2F","./Components/Body":"fRZnA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/Header":"9Dt2F","./Components/Body":"fRZnA","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -5758,7 +5761,603 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"j6uA9":[function(require,module,exports) {
+},{}],"9Dt2F":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2a62.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _constants = require("../utils/constants");
+var _s = $RefreshSig$();
+const Header = ()=>{
+    _s();
+    const [btnNameReact, setBtnNameReact] = (0, _react.useState)("Login");
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: (0, _constants.LOGO_URL)
+                }, void 0, false, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 10,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 18,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About Us"
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 19,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact Us"
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 20,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Card"
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 21,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "login",
+                            onClick: ()=>{
+                                btnNameReact === "Login" ? setBtnNameReact("Logout") : setBtnNameReact("Login");
+                            },
+                            children: btnNameReact
+                        }, void 0, false, {
+                            fileName: "src/Components/Header.jsx",
+                            lineNumber: 22,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/Header.jsx",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Header.jsx",
+        lineNumber: 9,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Header, "fLb9w332fDG6L01gKBulzD5eR8k=");
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$2a62.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"2V7fL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2V7fL":[function(require,module,exports) {
+//there are two types of export default and named export
+//named export is used to export multiple functions from a file
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
+const LOGO_URL = "data:image/png;base64,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";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"fRZnA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$66b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$66b1.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurantCard = require("./RestaurantCard");
+var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
+// import resList from "../utils/mockData";
+var _react = require("react");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _s = $RefreshSig$();
+// Body Component for body section: It contain all restaurant cards
+// We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
+const Body = ()=>{
+    _s();
+    //Local state variable
+    const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [filteredRestaurant, setFilteredRestaurant] = (0, _react.useState)([]);
+    const [searchtext, setsearchtext] = (0, _react.useState)("");
+    // console.log("Body rendered"); //for debugging purpose re render the component
+    //whenever state variable update, react triggers a reconciliation cycle (re-render the component)
+    //useEffect hook to fetch data from API
+    (0, _react.useEffect)(()=>{
+        fetchData();
+    }, []);
+    //Function to fetch data from API
+    const fetchData = async ()=>{
+        const data = await fetch("https://www.swiggy.com/mapi/homepage/getCards?lat=27.8973944&lng=78.0880129");
+        const json = await data.json();
+        //optional chaining
+        setListOfRestaurants(json?.data?.cards[3]?.card?.card?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurant(json?.data?.cards[3]?.card?.card?.gridWidget?.gridElements?.infoWithStyle?.restaurants);
+    };
+    //conditional rendering
+    return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/Components/Body.jsx",
+        lineNumber: 37,
+        columnNumber: 44
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filter",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "text",
+                        className: "search-box",
+                        value: searchtext,
+                        onChange: (e)=>{
+                            setsearchtext(e.target.value);
+                        }
+                    }, void 0, false, {
+                        fileName: "src/Components/Body.jsx",
+                        lineNumber: 40,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: ()=>{
+                            const filteredRestaurant = listOfRestaurants.filter((res)=>res.data.name.toLowerCase().includes(searchtext.toLowerCase()));
+                            setFilteredRestaurant(filteredRestaurant);
+                        //filtering the list of restaurants based on search input
+                        },
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/Components/Body.jsx",
+                        lineNumber: 46,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "filter-btn",
+                        onClick: ()=>{
+                            const filteredList = listOfRestaurants.filter((res)=>res.data.rating > 4);
+                            setListOfRestaurants(filteredList);
+                        },
+                        children: "Top Rated Restaurants"
+                    }, void 0, false, {
+                        fileName: "src/Components/Body.jsx",
+                        lineNumber: 53,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/Body.jsx",
+                lineNumber: 39,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "src/Components/Body.jsx",
+                lineNumber: 61,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: filteredRestaurant.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                        resData: restaurant
+                    }, restaurant.info.id, false, {
+                        fileName: "src/Components/Body.jsx",
+                        lineNumber: 64,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Body.jsx",
+                lineNumber: 62,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Body.jsx",
+        lineNumber: 38,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Body, "kr0WlBAFq2zBYkHiRNfBw7Doo/I=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$66b1.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"./RestaurantCard":"dvwcO","react":"21dqq","./Shimmer":"5Q9LV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"dvwcO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bb8e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bb8e.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _constants = require("../utils/constants");
+const RestaurantCard = (props)=>{
+    const { resData } = props; // Destructuring props object
+    const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, sla } = resData?.info;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        style: {
+            backgroundColor: "#f0f0f0"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                alt: "res-logo",
+                src: (0, _constants.CDN_URL) + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 19,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    avgRating,
+                    "stars"
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 20,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    "\u20B9",
+                    costForTwo,
+                    " FOR TWO"
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 21,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: sla?.slaString
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantCard.jsx",
+                lineNumber: 22,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/RestaurantCard.jsx",
+        lineNumber: 16,
+        columnNumber: 7
+    }, undefined);
+};
+_c = RestaurantCard;
+exports.default = RestaurantCard;
+var _c;
+$RefreshReg$(_c, "RestaurantCard");
+
+  $parcel$ReactRefreshHelpers$bb8e.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"2V7fL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5Q9LV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8c4a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8c4a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/Components/Shimmer.jsx",
+                lineNumber: 4,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/Components/Shimmer.jsx",
+                lineNumber: 5,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/Components/Shimmer.jsx",
+                lineNumber: 6,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/Components/Shimmer.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card",
+                children: "Cards"
+            }, void 0, false, {
+                fileName: "src/Components/Shimmer.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Shimmer.jsx",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$8c4a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports) {
+"use strict";
+var m = require("aaccff5d309d9239");
+var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+exports.createRoot = function(c, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.createRoot(c, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+exports.hydrateRoot = function(c, h, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.hydrateRoot(c, h, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+
+},{"aaccff5d309d9239":"j6uA9"}],"j6uA9":[function(require,module,exports) {
 "use strict";
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") return;
@@ -27219,2294 +27818,6 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"9Dt2F":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$2a62.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Header", ()=>Header);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constants = require("../utils/constants");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "logo-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    className: "logo",
-                    src: (0, _constants.LOGO_URL)
-                }, void 0, false, {
-                    fileName: "src/Components/Header.jsx",
-                    lineNumber: 8,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.jsx",
-                            lineNumber: 15,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "About Us"
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.jsx",
-                            lineNumber: 16,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Contact Us"
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.jsx",
-                            lineNumber: 17,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Card"
-                        }, void 0, false, {
-                            fileName: "src/Components/Header.jsx",
-                            lineNumber: 18,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/Header.jsx",
-                    lineNumber: 14,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Header.jsx",
-                lineNumber: 13,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Header.jsx",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Header;
-exports.default = Header;
-var _c;
-$RefreshReg$(_c, "Header");
-
-  $parcel$ReactRefreshHelpers$2a62.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"2V7fL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2V7fL":[function(require,module,exports) {
-//there are two types of export default and named export
-//named export is used to export multiple functions from a file
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
-parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
-const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const LOGO_URL = "data:image/png;base64,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";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"fRZnA":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$66b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$66b1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _restaurantCard = require("./RestaurantCard");
-var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
-var _mockData = require("../utils/mockData");
-var _mockDataDefault = parcelHelpers.interopDefault(_mockData);
-// Body Component for body section: It contain all restaurant cards
-// We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "filter-btn",
-                    children: "Top Rated Restaurants"
-                }, void 0, false, {
-                    fileName: "src/Components/Body.jsx",
-                    lineNumber: 13,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/Body.jsx",
-                lineNumber: 12,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search",
-                children: "Search"
-            }, void 0, false, {
-                fileName: "src/Components/Body.jsx",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-container",
-                children: (0, _mockDataDefault.default).map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                        resData: restaurant
-                    }, restaurant.data.id, false, {
-                        fileName: "src/Components/Body.jsx",
-                        lineNumber: 18,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/Components/Body.jsx",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/Body.jsx",
-        lineNumber: 11,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$66b1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"dvwcO","../utils/mockData":"bwQ1x","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dvwcO":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$bb8e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$bb8e.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constants = require("../utils/constants");
-const RestaurantCard = (props)=>{
-    const { resData } = props; // Destructuring props object
-    const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, deliveryTime } = resData?.data;
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card",
-        style: {
-            backgroundColor: "#f0f0f0"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res-logo",
-                alt: "res-logo",
-                src: (0, _constants.CDN_URL) + cloudinaryImageId
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 17,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 18,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 19,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    avgRating,
-                    "stars"
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    "\u20B9",
-                    costForTwo / 100,
-                    " FOR TWO"
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 21,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: [
-                    deliveryTime,
-                    "minutes"
-                ]
-            }, void 0, true, {
-                fileName: "src/Components/RestaurantCard.jsx",
-                lineNumber: 22,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/RestaurantCard.jsx",
-        lineNumber: 16,
-        columnNumber: 7
-    }, undefined);
-};
-_c = RestaurantCard;
-exports.default = RestaurantCard;
-var _c;
-$RefreshReg$(_c, "RestaurantCard");
-
-  $parcel$ReactRefreshHelpers$bb8e.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../utils/constants":"2V7fL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bwQ1x":[function(require,module,exports) {
-// RestaurantList is JSON Data for displaying cards
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const resList = [
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "74453",
-            name: "Domino's Pizza",
-            uuid: "87727dbd-7f2b-4857-9763-359624165845",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "bz9zkh2aqywjhpankb07",
-            cuisines: [
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 40000,
-            costForTwoString: "\u20B9400 FOR TWO",
-            deliveryTime: 45,
-            minDeliveryTime: 45,
-            maxDeliveryTime: 45,
-            slaString: "45 MINS",
-            lastMileTravel: 0,
-            slugs: {
-                restaurant: "dominos-pizza-majura-nondh-test_surat",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop 32 To 35, Sheetal Shopping Square,Near Lb Turning Point, Bhatar Road,MAJURA NONDH, Surat,GUJARAT-395001",
-            locality: "Bhatar Road",
-            parentId: 2456,
-            unserviceable: false,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "2.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "74453",
-                deliveryTime: 45,
-                minDeliveryTime: 45,
-                maxDeliveryTime: 45,
-                lastMileTravel: 0,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "410476",
-            name: "The Brooklyn Creamery - Healthy Ice Cream",
-            uuid: "82e23b48-b6bd-4ee0-9746-06737ec062b0",
-            city: "21",
-            area: "althan bhatar",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "ldtibwymvzehvmdwl8la",
-            cuisines: [
-                "Desserts",
-                "Ice Cream",
-                "Healthy Food"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 6.300000190734863,
-            slugs: {
-                restaurant: "the-brooklyn-creamery-low-cal-ice-cream-adajan-fc-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "C paiki, Chalta no. 23, Guru Ashish Building, Ground Floor, Opp Kotyark Nagar, Rander Road, Surat 395005",
-            locality: "Adajan FC",
-            parentId: 236673,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "410476",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 6.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.4",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "81094",
-            name: "Richie Rich Juices & Shakes",
-            uuid: "40b0b55b-e9af-43e7-aeae-be1b012d0b1d",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "500+ ratings",
-            cloudinaryImageId: "nyp7yrzwc1dc2xqfkydk",
-            cuisines: [
-                "Ice Cream"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "\u20B9250 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 5.599999904632568,
-            slugs: {
-                restaurant: "juices-shakes-by-richie-rich-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Richie Rich Building , Opposite Golden Square Complex, Parle Point, Athwa, Surat",
-            locality: "Parle Point",
-            parentId: 771,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "5.5 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "81094",
-                deliveryTime: 30,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 5.599999904632568,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 500,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "311443",
-            name: "Siddhi Icecream & Thick Shake",
-            uuid: "1ca3e8c2-e5da-4b59-8f7e-868991cb40b7",
-            city: "21",
-            area: "Nanpura",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "spd3y5gok3vvwqulgmda",
-            cuisines: [
-                "Ice Cream",
-                "Juices",
-                "Desserts",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 3,
-            slugs: {
-                restaurant: "siddhi-icecream-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "siddhi icecream, Kadampally Society, Timaliawad, Nanpura, Surat, Gujarat, India",
-            locality: "Athwa",
-            parentId: 387846,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "311443",
-                deliveryTime: 30,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 3,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.5",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "307070",
-            name: "Pizza Pie",
-            uuid: "68598bcb-7460-4466-a8b2-113158c6cf8c",
-            city: "21",
-            area: "Nanpura",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "bvr70adr30ejyr5ua79k",
-            cuisines: [
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "\u20B9300 FOR TWO",
-            deliveryTime: 37,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 4,
-            slugs: {
-                restaurant: "pizza-pie-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "1/704 Sarang building, Nanpura New Rd, opposite river palace, near Ramji Mandir, Nanpura, Surat, Gujarat",
-            locality: "Nanpura",
-            parentId: 158854,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "307070",
-                deliveryTime: 37,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 4,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "76858",
-            name: "Feeling Hungry",
-            uuid: "45f9ea54-f3cf-4f6b-8d85-e3468657fe51",
-            city: "21",
-            area: "Athwa",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "oxsb5mr1xsmhnxhunjsc",
-            cuisines: [
-                "Chinese",
-                "North Indian",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 2000,
-            costForTwoString: "\u20B920 FOR TWO",
-            deliveryTime: 35,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 3.700000047683716,
-            slugs: {
-                restaurant: "feeling-hungry-adajan-gam-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "GF shop no 1, Babubhai Chambers, Beside Sardar Bridge , Athwagate, surat",
-            locality: "Royal Residency, Adajan Gam",
-            parentId: 79237,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "3.7 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "76858",
-                deliveryTime: 35,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 3.700000047683716,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.2",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "617279",
-            name: "Malaxmi Fast Food",
-            uuid: "4848cb1b-b1c4-4a6e-9a6d-f96b781357db",
-            city: "21",
-            area: "Adajan",
-            totalRatingsString: "20+ ratings",
-            cloudinaryImageId: "agkm7cflq72tkualhstb",
-            cuisines: [
-                "Fast Food",
-                "Pizzas",
-                "Snacks",
-                "Beverages"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 44,
-            minDeliveryTime: 40,
-            maxDeliveryTime: 50,
-            slaString: "40-50 MINS",
-            lastMileTravel: 9.100000381469727,
-            slugs: {
-                restaurant: "mahalaxmi-fast-food-adajan-adajan-2",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "shop no 15,palanpur food zone,opp.sai trith,pal gam suart",
-            locality: "Palanpur Food Zone",
-            parentId: 373635,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "9.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "617279",
-                deliveryTime: 44,
-                minDeliveryTime: 40,
-                maxDeliveryTime: 50,
-                lastMileTravel: 9.100000381469727,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.0",
-            totalRatings: 20,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "469264",
-            name: "Dessert House",
-            uuid: "7a320917-c577-49cb-875a-1e585a3adbc1",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "jegpumsjcmomksbr2sxr",
-            cuisines: [
-                "Desserts",
-                "Ice Cream"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "\u20B9150 FOR TWO",
-            deliveryTime: 27,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 6.199999809265137,
-            slugs: {
-                restaurant: "dessert-house-piplod-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "SHOP NO 2, MARVELLA CORRIDOR OPP. C B PATEL HEALTH CLUB V.I.P ROAD, VESU",
-            locality: "Piplod",
-            parentId: 71430,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "469264",
-                deliveryTime: 27,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 6.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.5",
-            totalRatings: 0,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "395204",
-            name: "McDonald's Gourmet Burger Collection",
-            uuid: "55c33a9b-bb51-4b9d-8c94-708d48b08ebd",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "100+ ratings",
-            cloudinaryImageId: "wzbo5xivr8hstl0vxzcm",
-            cuisines: [
-                "Burgers",
-                "Beverages",
-                "Cafe",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "\u20B9500 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 8.199999809265137,
-            slugs: {
-                restaurant: "mcdonalds-gourmet-burger-collection-valentine-cinema-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "MC Donalds Family Restaurant Valentine Mall Valentine Cine Vision Surat , Dhumas Road, Nr Govardhan Haveli, Surat 395007",
-            locality: "Valentine Cinema",
-            parentId: 10761,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "8.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "395204",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 8.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 100,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "193541",
-            name: "Behrouz Biryani",
-            uuid: "abc2e9d1-df00-4449-bde3-4c35982d0ef3",
-            city: "21",
-            area: "Adajan Patiya",
-            totalRatingsString: "1000+ ratings",
-            cloudinaryImageId: "craozjakzx7sll2uracb",
-            cuisines: [
-                "Biryani",
-                "Mughlai",
-                "Lucknowi",
-                "Hyderabadi",
-                "Kebabs",
-                "North Indian",
-                "Persian",
-                "Desserts"
-            ],
-            tags: [],
-            costForTwo: 50000,
-            costForTwoString: "\u20B9500 FOR TWO",
-            deliveryTime: 49,
-            minDeliveryTime: 45,
-            maxDeliveryTime: 55,
-            slaString: "45-55 MINS",
-            lastMileTravel: 6.400000095367432,
-            slugs: {
-                restaurant: "behrouz-biryani-adajan-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Chalta no 23, Ground Floor, Guru Ashish Building, Below Stallon Gym, Opp Kotyark Nagar, Near Navyug College, Adajan, Surat 395005",
-            locality: "Nr Navyug College, Rander Road",
-            parentId: 1803,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.4 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "193541",
-                deliveryTime: 49,
-                minDeliveryTime: 45,
-                maxDeliveryTime: 55,
-                lastMileTravel: 6.400000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.3",
-            totalRatings: 1000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "475510",
-            name: "Momos House",
-            uuid: "34320d9a-ffa7-450c-ad61-d50485306626",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "vmold2zualdrrypxcvue",
-            cuisines: [
-                "Fast Food"
-            ],
-            tags: [],
-            costForTwo: 20000,
-            costForTwoString: "\u20B9200 FOR TWO",
-            deliveryTime: 31,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 6.199999809265137,
-            slugs: {
-                restaurant: "momo\u2019s-house-piplod-piplod",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "SHOP NO - 2, MARVELLA CORRIDOR, OPP. C B PATEL HEALTH CLUB, V.I.P. ROAD, Surat,, Vesu , Surat Municipal Corporation, Surat Municipal Corporation, Gujarat - 395007",
-            locality: "Vesu",
-            parentId: 15884,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.1 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "475510",
-                deliveryTime: 31,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 6.199999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 0,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "127596",
-            name: "Sabir Chicken",
-            uuid: "f0f49821-52ed-4435-9014-c845e964a3d8",
-            city: "21",
-            area: "Chowk Bazar",
-            totalRatingsString: "5000+ ratings",
-            cloudinaryImageId: "kilrdjqt8chduasii5ni",
-            cuisines: [
-                "North Indian",
-                "Biryani"
-            ],
-            tags: [],
-            costForTwo: 30000,
-            costForTwoString: "\u20B9300 FOR TWO",
-            deliveryTime: 30,
-            minDeliveryTime: 25,
-            maxDeliveryTime: 35,
-            slaString: "25-35 MINS",
-            lastMileTravel: 4.300000190734863,
-            slugs: {
-                restaurant: "sabir-chicken-athwa-athwa",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Nehru Bridge, Behind Nagin Chand Hall, Chowk Bazar, Surat, Gujarat 395003",
-            locality: "Chowk Bazar",
-            parentId: 173978,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "4.3 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "127596",
-                deliveryTime: 30,
-                minDeliveryTime: 25,
-                maxDeliveryTime: 35,
-                lastMileTravel: 4.300000190734863,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 5000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "64656",
-            name: "Mahesh Pav Bhaji",
-            uuid: "ccfda4b9-82b1-4f22-9567-eb98c448b267",
-            city: "21",
-            area: "Adajan",
-            totalRatingsString: "10000+ ratings",
-            cloudinaryImageId: "84d3bea985f13bd980dc39c9c73bc87f",
-            cuisines: [
-                "Desserts",
-                "Chinese",
-                "South Indian",
-                "Ice Cream",
-                "Pizzas"
-            ],
-            tags: [],
-            costForTwo: 25000,
-            costForTwoString: "\u20B9250 FOR TWO",
-            deliveryTime: 36,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 6.900000095367432,
-            slugs: {
-                restaurant: "mahesh-pav-bhaji-adajan-gam-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop 12, Garden View Apartment, Honey Park Road, Adajan Gam, Surat",
-            locality: "Adajan Gam",
-            parentId: 6553,
-            unserviceable: true,
-            veg: true,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "30% off",
-                shortDescriptionList: [
-                    {
-                        meta: "30% off | Use JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "30% off up to \u20B9150 on orders above \u20B9400 | Use code JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "30% OFF",
-                shortDescriptionList: [
-                    {
-                        meta: "Use JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "30% off up to \u20B9150 on orders above \u20B9400 | Use code JUMBO",
-                        discountType: "Percentage",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "6.9 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "64656",
-                deliveryTime: 36,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 6.900000095367432,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.1",
-            totalRatings: 10000,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "255204",
-            name: "The Dango Cake Shop",
-            uuid: "dbfd3f3c-77a6-4979-96c4-ce9863e54cdc",
-            city: "21",
-            area: "Galaxy Circle",
-            totalRatingsString: "50+ ratings",
-            cloudinaryImageId: "mnvfpsoealkflze4e5qi",
-            cuisines: [
-                "Bakery"
-            ],
-            tags: [],
-            costForTwo: 27000,
-            costForTwoString: "\u20B9270 FOR TWO",
-            deliveryTime: 34,
-            minDeliveryTime: 30,
-            maxDeliveryTime: 40,
-            slaString: "30-40 MINS",
-            lastMileTravel: 7.699999809265137,
-            slugs: {
-                restaurant: "twisted-cake-live-cake-adajan-adajan",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "44 La Victoria, galaxy circle pal Surat",
-            locality: "Galaxy Circle",
-            parentId: 207513,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7.6 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "255204",
-                deliveryTime: 34,
-                minDeliveryTime: 30,
-                maxDeliveryTime: 40,
-                lastMileTravel: 7.699999809265137,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "4.2",
-            totalRatings: 50,
-            new: false
-        },
-        subtype: "basic"
-    },
-    {
-        type: "restaurant",
-        data: {
-            type: "F",
-            id: "664656",
-            name: "Cheezylicious Cafe",
-            uuid: "5880e561-10ed-4f96-990b-2251e2f09c82",
-            city: "21",
-            area: "Piplod",
-            totalRatingsString: "Too Few Ratings",
-            cloudinaryImageId: "fda9ad56b9d62070fec105cd93693129",
-            cuisines: [
-                "Cafe",
-                "Fast Food",
-                "Chinese",
-                "Snacks",
-                "Italian",
-                "Mexican"
-            ],
-            tags: [],
-            costForTwo: 15000,
-            costForTwoString: "\u20B9150 FOR TWO",
-            deliveryTime: 38,
-            minDeliveryTime: 35,
-            maxDeliveryTime: 45,
-            slaString: "35-45 MINS",
-            lastMileTravel: 7.599999904632568,
-            slugs: {
-                restaurant: "cheezylicious-cafe-piplod-piplod-2",
-                city: "surat"
-            },
-            cityState: "21",
-            address: "Shop no G10 ground floor, aagam square B/S Dream heritage, Canal road, Vesu",
-            locality: "Dream heritage",
-            parentId: 59292,
-            unserviceable: true,
-            veg: false,
-            select: false,
-            favorite: false,
-            tradeCampaignHeaders: [],
-            aggregatedDiscountInfo: {
-                header: "FREE DELIVERY",
-                shortDescriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            aggregatedDiscountInfoV2: {
-                header: "",
-                shortDescriptionList: [
-                    {
-                        meta: "Free Delivery",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                descriptionList: [
-                    {
-                        meta: "FREE DELIVERY",
-                        discountType: "FREE_DELIVERY",
-                        operationType: "RESTAURANT"
-                    }
-                ],
-                subHeader: "",
-                headerType: 0,
-                superFreedel: ""
-            },
-            chain: [],
-            feeDetails: {
-                fees: [],
-                totalFees: 0,
-                message: "",
-                title: "",
-                amount: "",
-                icon: ""
-            },
-            availability: {
-                opened: true,
-                nextOpenMessage: "",
-                nextCloseMessage: ""
-            },
-            longDistanceEnabled: 0,
-            rainMode: "NONE",
-            thirdPartyAddress: false,
-            thirdPartyVendor: "",
-            adTrackingID: "",
-            badges: {
-                imageBased: [],
-                textBased: [],
-                textExtendedBadges: []
-            },
-            lastMileTravelString: "7.5 kms",
-            hasSurge: false,
-            sla: {
-                restaurantId: "664656",
-                deliveryTime: 38,
-                minDeliveryTime: 35,
-                maxDeliveryTime: 45,
-                lastMileTravel: 7.599999904632568,
-                lastMileDistance: 0,
-                serviceability: "SERVICEABLE_WITH_BANNER",
-                rainMode: "NONE",
-                longDistance: "NOT_LONG_DISTANCE",
-                preferentialService: false,
-                iconType: "EMPTY"
-            },
-            promoted: false,
-            avgRating: "3.9",
-            totalRatings: 0,
-            new: true
-        },
-        subtype: "basic"
-    }
-];
-exports.default = resList;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["4Jck3","1xC6H","e9Zfo"], "e9Zfo", "parcelRequiredd69")
+},{}]},["4Jck3","1xC6H","e9Zfo"], "e9Zfo", "parcelRequiredd69")
 
 //# sourceMappingURL=index.f482b72b.js.map

@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
+import {createRoot} from "react-dom/client";
 
 
 const Footer = () => {
@@ -9,11 +10,11 @@ const Footer = () => {
   return (
     <div className="footer">
       Created By
-      <i class="fa-solid fa-heart"></i>
+      <i className="fa-solid fa-heart"></i>
       <a href="https://22camsa110.netlify.app" target="_blank">
         ExWhyZeD
       </a>
-      <i class="fa-solid fa-copyright"></i>
+      <i className="fa-solid fa-copyright"></i>
       {year}
       <strong>
         Food<span>Fire</span>
@@ -34,4 +35,9 @@ const AppLayout = () => {
   );
 };
 
-ReactDOM.render(<AppLayout />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<AppLayout />);
+
+// const rootElement = document.getElementById("root");
+// ReactDOM.render(<AppLayout />, rootElement);

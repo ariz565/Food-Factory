@@ -8,7 +8,7 @@
   width: 100px;
 }
 
-.nav-items{
+.nav-items {
   padding: 0px 20px;
 }
 
@@ -20,44 +20,63 @@
 
 .nav-items > ul > li {
   padding: 10px;
-  margin:10px;
+  margin: 10px;
 }
 
-.res-container{
+.res-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 .res-card {
   margin: auto;
-  padding:10px;
-  width:200px;
-  height:400px;
+  padding: 10px;
+  width: 200px;
+  height: 400px;
 }
 
-.res-card:hover{
+.res-card:hover {
   cursor: pointer;
   border: 1px solid black;
 }
 
-.search{
+.search {
   padding: 10px;
 }
 
-.res-logo{
+.res-logo {
   width: 100%;
 }
 
-.filter-btn{
-  margin:10px;
+.filter-btn {
+  margin: 10px;
   cursor: pointer;
 }
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  background-color: gray;
+  margin: 20px;
+}
+
+.login{
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
+}
+
 /* .res-card > img {
   width: 100%;
 } */
-
-
-
 
 /* footer CSS */
 /* .footer{

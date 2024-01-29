@@ -54,4 +54,25 @@
   margin: 10px;
 }
 
+.shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: gray;
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+}
+
+.login {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.filter {
+  display: flex;
+}
+
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
