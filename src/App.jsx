@@ -8,7 +8,6 @@ import Error from "./Components/Error";
 import {createRoot} from "react-dom/client";
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 
-
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
@@ -31,7 +30,6 @@ const Footer = () => {
 const AppLayout = () => {
   return (
     <div className="app">
-    
       <Header />
       <Outlet />
   </div>

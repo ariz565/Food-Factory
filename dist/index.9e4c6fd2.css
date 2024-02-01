@@ -1,3 +1,10 @@
+.body {
+  background-color: #ffebcd;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
 .header {
   border: 1px solid #000;
   justify-content: space-between;
@@ -31,8 +38,8 @@
 
 .res-card {
   width: 200px;
-  height: 400px;
-  margin: auto;
+  height: 410px;
+  margin: 10px;
   padding: 10px;
 }
 

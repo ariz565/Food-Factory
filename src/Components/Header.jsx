@@ -2,7 +2,6 @@ import { useState } from "react";
 import { LOGO_URL } from "../utils/constants";
 import {Link} from "react-router-dom";
 
-
 const Header = () => {
     const [btnNameReact, setBtnNameReact] = useState("Login");
     //if no dependency array => useEffect will run after every render
@@ -12,9 +11,8 @@ const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <img
-                    className="logo"
-                    src={LOGO_URL}  />
+                <a href="/" className="logo-link">
+                <img className="logo" src={LOGO_URL}  /> </a>
                     </div>
 
             <div className="nav-items">
