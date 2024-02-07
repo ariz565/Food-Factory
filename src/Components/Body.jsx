@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 // import resList from "../utils/mockData";
 import {useEffect, useState} from "react";
 import Shimmer from "./Shimmer";
+import {Link} from "react-router-dom";
 
 
 // Body Component for body section: It contain all restaurant cards
@@ -21,7 +22,7 @@ const Body = () => {
 
     //Function to fetch data from API
     const fetchData = async () => {
-        const data = await fetch ("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667");
+        const data = await fetch ("https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.9135016&lng=78.0781901&collection=83667");
             const json =await data.json();
             console.log("apiData", json?.data.cards[3]);
             //below written code is not a good way to write code , please use optional chaining
@@ -71,7 +72,7 @@ const Body = () => {
            
 
                 {filteredRestaurant.map((restaurant) => (
-                    <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+                   <Link to ={"/restaurants/"+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>
                 ))}
                 </div>
         </div>

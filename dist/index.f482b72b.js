@@ -2962,6 +2962,8 @@ var _contact = require("./Components/Contact");
 var _contactDefault = parcelHelpers.interopDefault(_contact);
 var _error = require("./Components/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
+var _restaurantMenu = require("./Components/RestaurantMenu");
+var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
 var _reactRouterDom = require("react-router-dom");
 const Footer = ()=>{
     const year = new Date().getFullYear();
@@ -2973,7 +2975,7 @@ const Footer = ()=>{
                 className: "fa-solid fa-heart"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -2982,14 +2984,14 @@ const Footer = ()=>{
                 children: "ExWhyZeD"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                 className: "fa-solid fa-copyright"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             year,
@@ -3000,19 +3002,19 @@ const Footer = ()=>{
                         children: "Fire"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 23,
+                        lineNumber: 24,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };
@@ -3025,18 +3027,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 33,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined);
 };
@@ -3046,7 +3048,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 42,
+            lineNumber: 43,
             columnNumber: 11
         }, undefined),
         children: [
@@ -3054,7 +3056,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3062,7 +3064,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 50,
+                    lineNumber: 51,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3070,14 +3072,22 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 54,
+                    lineNumber: 55,
+                    columnNumber: 15
+                }, undefined)
+            },
+            {
+                path: "/restaurants/:resId",
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                    fileName: "src/App.jsx",
+                    lineNumber: 59,
                     columnNumber: 15
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 61,
+            lineNumber: 66,
             columnNumber: 16
         }, undefined)
     }
@@ -3087,7 +3097,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.jsx",
-    lineNumber: 66,
+    lineNumber: 71,
     columnNumber: 13
 }, undefined)); // const container = document.getElementById("root");
  // const root = createRoot(container);
@@ -3103,7 +3113,7 @@ $RefreshReg$(_c1, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"9Dt2F","./Components/Body":"fRZnA","./Components/About":"kouZu","./Components/Contact":"3ECXD","./Components/Error":"gLCSb","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./Components/Header":"9Dt2F","./Components/Body":"fRZnA","./Components/About":"kouZu","./Components/Contact":"3ECXD","./Components/Error":"gLCSb","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/RestaurantMenu":"i9czG"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27315,8 +27325,8 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "logo-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "/",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
                     className: "logo-link",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -27439,8 +27449,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+parcelHelpers.export(exports, "MENU_API", ()=>MENU_API);
 const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
-const LOGO_URL = "data:image/png;base64,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";
+const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnf0uWY-4YX1EFKJbQyxZYozNXPtXXvUG7H00lrmAoYdqVdctwu92luyThlihG-7WMves&usqp=CAU";
+const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=27.9135016&lng=78.0781901&restaurantId=";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -34103,6 +34115,7 @@ var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _react = require("react");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 // Body Component for body section: It contain all restaurant cards
 // We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
@@ -34120,7 +34133,7 @@ const Body = ()=>{
     }, []);
     //Function to fetch data from API
     const fetchData = async ()=>{
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&collection=83667");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.9135016&lng=78.0781901&collection=83667");
         const json = await data.json();
         console.log("apiData", json?.data.cards[3]);
         //below written code is not a good way to write code , please use optional chaining
@@ -34142,7 +34155,7 @@ const Body = ()=>{
     //conditional rendering
     return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/Components/Body.jsx",
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 45
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34159,7 +34172,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/Components/Body.jsx",
-                        lineNumber: 50,
+                        lineNumber: 51,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34171,7 +34184,7 @@ const Body = ()=>{
                         children: "Search"
                     }, void 0, false, {
                         fileName: "src/Components/Body.jsx",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34183,33 +34196,40 @@ const Body = ()=>{
                         children: "Top Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/Components/Body.jsx",
-                        lineNumber: 63,
+                        lineNumber: 64,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Body.jsx",
-                lineNumber: 49,
+                lineNumber: 50,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-container",
-                children: filteredRestaurant.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
-                        resData: restaurant
-                    }, restaurant.info.id, false, {
+                children: filteredRestaurant.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/restaurants/" + restaurant.info.id,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
+                            resData: restaurant
+                        }, restaurant.info.id, false, {
+                            fileName: "src/Components/Body.jsx",
+                            lineNumber: 75,
+                            columnNumber: 67
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/Components/Body.jsx",
-                        lineNumber: 74,
-                        columnNumber: 21
+                        lineNumber: 75,
+                        columnNumber: 20
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Body.jsx",
-                lineNumber: 70,
+                lineNumber: 71,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Body.jsx",
-        lineNumber: 48,
+        lineNumber: 49,
         columnNumber: 9
     }, undefined);
 };
@@ -34224,7 +34244,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"dvwcO","react":"21dqq","./Shimmer":"5Q9LV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dvwcO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantCard":"dvwcO","react":"21dqq","./Shimmer":"5Q9LV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"dvwcO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb8e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34270,7 +34290,7 @@ const RestaurantCard = (props)=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
                     avgRating,
-                    "stars"
+                    "\u2B50"
                 ]
             }, void 0, true, {
                 fileName: "src/Components/RestaurantCard.jsx",
@@ -34392,41 +34412,257 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: " About "
-            }, void 0, false, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 4,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: " This is my first react project "
-            }, void 0, false, {
-                fileName: "src/Components/About.jsx",
-                lineNumber: 5,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/About.jsx",
-        lineNumber: 3,
-        columnNumber: 9
-    }, undefined);
-};
-_c = About;
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _user = require("./User");
+var _userDefault = parcelHelpers.interopDefault(_user);
+var _userClass = require("./UserClass");
+var _userClassDefault = parcelHelpers.interopDefault(_userClass);
+class About extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+    }
+    componentDidMount() {
+        console.log("Component Mounted");
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: " About "
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 22,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: " This is my first react project "
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userDefault.default), {
+                    name: "ExWhyZedd (function)"
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "ExWhyZedd (classs)",
+                    location: "Delhi Class"
+                }, void 0, false, {
+                    fileName: "src/Components/About.jsx",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/About.jsx",
+            lineNumber: 21,
+            columnNumber: 13
+        }, this);
+    }
+}
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$17a8.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3ECXD":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./User":"db2q0","./UserClass":"6kEGm","react":"21dqq"}],"db2q0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fcf9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fcf9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const User = ({ name })=>{
+    _s();
+    const [count] = (0, _react.useState)(0);
+    const [count2] = (0, _react.useState)(1);
+    (0, _react.useEffect)(()=>{
+    //API calls
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "user-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Count = ",
+                    count
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/User.jsx",
+                lineNumber: 14,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: [
+                    "Name: ",
+                    name,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/User.jsx",
+                lineNumber: 15,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "Location: Delhi "
+            }, void 0, false, {
+                fileName: "src/Components/User.jsx",
+                lineNumber: 16,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "Contact: @ExWhyZedd "
+            }, void 0, false, {
+                fileName: "src/Components/User.jsx",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/User.jsx",
+        lineNumber: 13,
+        columnNumber: 5
+    }, undefined);
+};
+_s(User, "Oxnd9AqTPYrpRTgMmuQdYNla7IQ=");
+_c = User;
+exports.default = User;
+var _c;
+$RefreshReg$(_c, "User");
+
+  $parcel$ReactRefreshHelpers$fcf9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"6kEGm":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ac40 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ac40.prelude(module);
+
+try {
+//class based component is a class that extends from React.Component and has a render method
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class UserClass extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            userInfo: {
+                name: "Dummy Name",
+                location: "Default Location"
+            }
+        };
+        console.log(this.props.name + "child constructor");
+    }
+    async componentDidMount() {
+        //     console.log(this.props.name+"child Component Mounted");
+        const data = await fetch(" https://api.github.com/users/ExWhyZedd       ");
+        const json = await data.json();
+        this.setState({
+            userInfo: json
+        });
+        console.log(json);
+    }
+    componentDidUpdate() {
+        console.log("Component Updated");
+    }
+    componentWillUnmount() {
+        console.log("Component Unmounted");
+    }
+    render() {
+        const { name, location, avatar_url } = this.state.userInfo;
+        // const {count} = this.state;
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "user-card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: avatar_url
+                }, void 0, false, {
+                    fileName: "src/Components/UserClass.jsx",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: [
+                        "Name: ",
+                        name
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/UserClass.jsx",
+                    lineNumber: 48,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    children: [
+                        "Location: ",
+                        location
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/UserClass.jsx",
+                    lineNumber: 49,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: "Contact: @ExWhyZedd"
+                }, void 0, false, {
+                    fileName: "src/Components/UserClass.jsx",
+                    lineNumber: 50,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserClass, {}, void 0, false, {
+                    fileName: "src/Components/UserClass.jsx",
+                    lineNumber: 51,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Components/UserClass.jsx",
+            lineNumber: 46,
+            columnNumber: 7
+        }, this);
+    }
+}
+exports.default = UserClass; /**
+ *
+ * Parent Constructor
+ * Parent render
+ *    First Child constructor
+ *    First Child render
+ *    Second Child constructor
+ *    Second Child render
+ *
+ *    DOM UPDATED for children
+ *
+ *    first Child componentDidMount
+ *    Second Child componentDid
+ *  Parent componentDidMount
+ *
+ *
+ */ 
+
+  $parcel$ReactRefreshHelpers$ac40.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3ECXD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$26ef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34536,6 +34772,109 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4Jck3","1xC6H","e9Zfo"], "e9Zfo", "parcelRequiredd69")
+},{"react/jsx-dev-runtime":"iTorj","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9czG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$212c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$212c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _reactRouterDom = require("react-router-dom");
+var _constants = require("../utils/constants");
+var _s = $RefreshSig$();
+const RestaurantMenu = ()=>{
+    _s();
+    const [resInfo, setResInfo] = (0, _react.useState)([
+        null
+    ]);
+    const { resId } = (0, _reactRouterDom.useParams)();
+    (0, _react.useEffect)(()=>{
+        fetchMenu();
+    }, []);
+    const fetchMenu = async ()=>{
+        const data = await fetch((0, _constants.MENU_API) + resId);
+        // + "&submitAction=ENTER"
+        const json = await data.json();
+        // console.log(json);
+        setResInfo(json.data);
+    };
+    if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/Components/RestaurantMenu.jsx",
+        lineNumber: 24,
+        columnNumber: 27
+    }, undefined);
+    const { name, cuisines, sla } = resInfo?.cards[2]?.card?.card?.info;
+    const { itemCards } = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    console.log(itemCards);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "menu",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantMenu.jsx",
+                lineNumber: 34,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    cuisines.join(","),
+                    "-",
+                    sla
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/RestaurantMenu.jsx",
+                lineNumber: 35,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Menu"
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantMenu.jsx",
+                lineNumber: 36,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                children: itemCards.map((itemCard)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        children: item.card.info.name
+                    }, void 0, false, {
+                        fileName: "src/Components/RestaurantMenu.jsx",
+                        lineNumber: 39,
+                        columnNumber: 21
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/RestaurantMenu.jsx",
+                lineNumber: 37,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/RestaurantMenu.jsx",
+        lineNumber: 33,
+        columnNumber: 9
+    }, undefined);
+};
+_s(RestaurantMenu, "TH3hh44IEIxP1XYW0f6Gt74ks4E=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c = RestaurantMenu;
+exports.default = RestaurantMenu;
+var _c;
+$RefreshReg$(_c, "RestaurantMenu");
+
+  $parcel$ReactRefreshHelpers$212c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Shimmer":"5Q9LV","react-router-dom":"9xmpe","../utils/constants":"2V7fL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["4Jck3","1xC6H","e9Zfo"], "e9Zfo", "parcelRequiredd69")
 
 //# sourceMappingURL=index.f482b72b.js.map

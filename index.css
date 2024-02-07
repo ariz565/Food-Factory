@@ -12,6 +12,7 @@
 }
 .logo {
   width: 100px;
+  margin: 10px;
 }
 
 .nav-items {
@@ -78,6 +79,11 @@
 
 .filter {
   display: flex;
+}
+
+.user-card {
+  padding: 10px;
+  border: 1px solid black;
 }
 
 /* .res-card > img {

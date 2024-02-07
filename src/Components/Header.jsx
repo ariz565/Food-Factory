@@ -11,8 +11,8 @@ const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
-                <a href="/" className="logo-link">
-                <img className="logo" src={LOGO_URL}  /> </a>
+                <Link to ="/" className="logo-link">
+                <img className="logo" src={LOGO_URL}  /> </Link>
                     </div>
 
             <div className="nav-items">
