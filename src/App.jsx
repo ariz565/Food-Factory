@@ -9,6 +9,10 @@ import RestaurantMenu from "./Components/RestaurantMenu";
 import {createRoot} from "react-dom/client";
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
 
+//chunking
+//code splitting
+//dynamic bundling
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (

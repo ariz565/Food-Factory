@@ -2965,6 +2965,9 @@ var _errorDefault = parcelHelpers.interopDefault(_error);
 var _restaurantMenu = require("./Components/RestaurantMenu");
 var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
 var _reactRouterDom = require("react-router-dom");
+//chunking
+//code splitting
+//dynamic bundling
 const Footer = ()=>{
     const year = new Date().getFullYear();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2975,7 +2978,7 @@ const Footer = ()=>{
                 className: "fa-solid fa-heart"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -2984,14 +2987,14 @@ const Footer = ()=>{
                 children: "ExWhyZeD"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 18,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
                 className: "fa-solid fa-copyright"
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 21,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined),
             year,
@@ -3002,19 +3005,19 @@ const Footer = ()=>{
                         children: "Fire"
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 24,
+                        lineNumber: 28,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 23,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 15,
+        lineNumber: 19,
         columnNumber: 5
     }, undefined);
 };
@@ -3027,18 +3030,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 34,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 35,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 33,
+        lineNumber: 37,
         columnNumber: 5
     }, undefined);
 };
@@ -3048,7 +3051,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 43,
+            lineNumber: 47,
             columnNumber: 11
         }, undefined),
         children: [
@@ -3056,7 +3059,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 47,
+                    lineNumber: 51,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3064,7 +3067,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 51,
+                    lineNumber: 55,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3072,7 +3075,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 55,
+                    lineNumber: 59,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3080,14 +3083,14 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 59,
+                    lineNumber: 63,
                     columnNumber: 15
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 66,
+            lineNumber: 70,
             columnNumber: 16
         }, undefined)
     }
@@ -3097,7 +3100,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.jsx",
-    lineNumber: 71,
+    lineNumber: 75,
     columnNumber: 13
 }, undefined)); // const container = document.getElementById("root");
  // const root = createRoot(container);
@@ -34560,7 +34563,7 @@ class UserClass extends (0, _reactDefault.default).Component {
     }
     async componentDidMount() {
         //     console.log(this.props.name+"child Component Mounted");
-        const data = await fetch("https://api.github.com/users/ExWhyZedd");
+        const data = await fetch("https://api.github.com/users/userName");
         const json = await data.json();
         console.log(json);
         this.setState({
