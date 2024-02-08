@@ -1,5 +1,5 @@
 import React from 'react';
-import User from './User';
+// import User from './User';
 import UserClass from './UserClass';
 
 
@@ -21,7 +21,7 @@ componentDidMount() {
             <div>
         <h1> About </h1>
         <h2> This is my first react project </h2>
-        <User name={"ExWhyZedd (function)"}/>
+        {/* <User name={"ExWhyZedd (function)"}/> */}
         <UserClass name={"ExWhyZedd (classs)"}location={"Delhi Class"}/>
         </div>
         )}

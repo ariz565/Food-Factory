@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import {useEffect, useState} from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 // Body Component for body section: It contain all restaurant cards
@@ -43,7 +44,10 @@ const Body = () => {
             // setFilteredRestaurant(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
 //conditional rendering
-
+const onlineStatus = useOnlineStatus();
+if (onlineStatus === false) return (
+    <h1>Looks like you're offline!! Please check your internet Connection</h1>
+);
 
     return listOfRestaurants.length === 0 ? <Shimmer/> : (
         <div className="body">
