@@ -13,12 +13,12 @@ const RestaurantCard = (props) => {
   } = resData?.info;
 
     return (
-      <div className="res-card" style={{backgroundColor: "#f0f0f0"}}>
-        <img className="res-logo" alt ="res-logo" src ={CDN_URL + cloudinaryImageId} /> 
-        <h3>{name}</h3>
+      <div className="m-4 p-4 w-[260px] rounded-lg bg-gradient-to-r from-zinc-50 to-slate-300-200">
+        <img className="rounded-lg" alt ="res-logo" src ={CDN_URL + cloudinaryImageId} /> 
+        <h3 className="font-bold font-sans py-4 text-lg">{name}</h3>
         <h4>{cuisines.join(", ")}</h4>
-        <h4>{avgRating}⭐</h4>
-        <h4>{costForTwo} FOR TWO</h4>
+        <h4 className="font-serif">{avgRating}⭐</h4>
+        <h4 className="italic font-medium">{costForTwo} FOR TWO</h4>
         <h4>{sla?.slaString}</h4>
         </div>
     );

@@ -1,4 +1,8 @@
-.body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -84,7 +88,7 @@
 .user-card {
   padding: 10px;
   border: 1px solid black;
-}
+} */
 
 /* .res-card > img {
   width: 100%;

@@ -51,34 +51,43 @@ if (onlineStatus === false) return (
 
     return listOfRestaurants.length === 0 ? <Shimmer/> : (
         <div className="body">
-            <div className="filter">
-                <input type ="text" className="search-box" value={searchtext}
+            <div className="filter flex">
+                <div className="search m-4 p-4">
+                    <input type ="text" className="border border-solid border-black" value={searchtext}
                 onChange={(e)=>{
                     setsearchtext(e.target.value);
                 }}
                  />
                   
-                <button onClick={()=>
-                {
+                <button className="px-4 py-2 ml-3 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-400 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80" 
+                onClick={()=>{
+                    //filter the restaurant cards and update the UI
+                    //search text
                   const filteredRestaurant=  listOfRestaurants.filter((res)=> res.info.name.toLowerCase().includes(searchtext.toLowerCase()));
 
                     setFilteredRestaurant(filteredRestaurant);
                     //filtering the list of restaurants based on search input
                 }}>Search</button>
-                <button className="filter-btn" onClick={() => {
+                </div>
+
+                <div className="search m-4 p-4 flex items-center"> 
+                <button className="px-4 py-2 ml-3 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-400 rounded-lg hover:bg-green-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                onClick={() => {
                     const filteredList = listOfRestaurants.filter(
                         (res) => res.info.avgRating > 4 );
                     setFilteredRestaurant(filteredList);
                 }}       
                 >Top Rated Restaurants</button>
-            </div>
-            <div className="res-container">
+                </div>
+                </div>
+            <div className="flex flex-wrap bg-gradient-to-r from-zinc-50 to-orange-100">
            
 
                 {filteredRestaurant.map((restaurant) => (
                    <Link to ={"/restaurants/"+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>
                 ))}
                 </div>
+                
         </div>
     ); 
 };
