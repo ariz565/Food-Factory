@@ -1,9 +1,10 @@
 import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 // import resList from "../utils/mockData";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useContext} from "react";
 import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 
 // Body Component for body section: It contain all restaurant cards
@@ -50,11 +51,13 @@ if (onlineStatus === false) return (
     <h1>Looks like you're offline!! Please check your internet Connection</h1>
 );
 
+const {loggedInUser,setUserName} = useContext(UserContext)
+
     return listOfRestaurants.length === 0 ? <Shimmer/> : (
         <div className="body">
             <div className="filter flex">
                 <div className="search m-4 p-4">
-                    <input type ="text" className="border border-solid border-black" value={searchtext}
+                    <input type ="text" className="border border-solid border-black " value={searchtext}
                 onChange={(e)=>{
                     setsearchtext(e.target.value);
                 }}
@@ -72,6 +75,10 @@ if (onlineStatus === false) return (
                 </div>
 
                 <div className="search m-4 p-4 flex items-center"> 
+                {/* <label>UserName : </label>
+                <input className="border border-black p-2"
+                value={loggedInUser}
+                onChange={(e)} => setUserName(e.target.value)} /> */}
                 <button className="px-4 py-2 ml-3 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-400 rounded-lg hover:bg-green-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
                 onClick={() => {
                     const filteredList = listOfRestaurants.filter(
