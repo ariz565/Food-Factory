@@ -1,3 +1,4 @@
+import { Component } from "react";
 import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
@@ -23,5 +24,18 @@ const RestaurantCard = (props) => {
         </div>
     );
   };
+
+//High order Component
+//input - RestaurantCard =>> output - RestaurantCardPromoted
+export const withPromotedLabel =(RestaurantCard) => {
+  return () => {
+    return(
+      <div>
+        <label>Promoted</label>
+        <RestaurantCard/>
+      </div>
+    );
+  };
+};
 
 export default RestaurantCard;

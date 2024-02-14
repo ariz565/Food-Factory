@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, {withPromotedLabel} from "./RestaurantCard";
 // import resList from "../utils/mockData";
 import {useEffect, useState} from "react";
 import Shimmer from "./Shimmer";
@@ -14,6 +14,7 @@ const Body = () => {
     const [listOfRestaurants, setListOfRestaurants] = useState([]);
     const [filteredRestaurant, setFilteredRestaurant] = useState([]);
     const [searchtext, setsearchtext] = useState("");
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
     // console.log("Body rendered"); //for debugging purpose re render the component
     //whenever state variable update, react triggers a reconciliation cycle (re-render the component)
     //useEffect hook to fetch data from API
@@ -84,7 +85,16 @@ if (onlineStatus === false) return (
            
 
                 {filteredRestaurant.map((restaurant) => (
-                   <Link to ={"/restaurants/"+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>
+                //    <Link to ={"/restaurants/"+restaurant.info.id}><RestaurantCard key={restaurant.info.id} resData={restaurant}/></Link>
+                // ))}
+                <Link key ={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}
+                >
+                    {restaurant.info.promoted ? (
+                        <RestaurantCardPromoted resData={restaurant} />
+                    ) : (
+                        <RestaurantCard resData={restaurant} />
+                    )}
+                    </Link>
                 ))}
                 </div>
                 
