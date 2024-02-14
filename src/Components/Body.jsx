@@ -75,18 +75,22 @@ const {loggedInUser,setUserName} = useContext(UserContext)
                 </div>
 
                 <div className="search m-4 p-4 flex items-center"> 
-                {/* <label>UserName : </label>
-                <input className="border border-black p-2"
-                value={loggedInUser}
-                onChange={(e)} => setUserName(e.target.value)} /> */}
                 <button className="px-4 py-2 ml-3 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-400 rounded-lg hover:bg-green-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
                 onClick={() => {
                     const filteredList = listOfRestaurants.filter(
                         (res) => res.info.avgRating > 4 );
                     setFilteredRestaurant(filteredList);
                 }}       
-                >Top Rated Restaurants</button>
+                >Top Rated Restaurants </button>
                 </div>
+                <div className="search m-4 p-4 flex items-center">
+          <label>UserName : </label>
+          <input
+            className="border border-black p-2"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
                 </div>
             <div className="flex flex-wrap bg-gradient-to-r from-zinc-50 to-orange-100">
            

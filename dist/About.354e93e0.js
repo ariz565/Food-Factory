@@ -659,7 +659,7 @@ class About extends (0, _react.Component) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                    children: "This is Namaste React Web Series"
+                    children: "This is my first react project"
                 }, void 0, false, {
                     fileName: "src/Components/About.jsx",
                     lineNumber: 31,
@@ -667,7 +667,7 @@ class About extends (0, _react.Component) {
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
                     name: "First",
-                    location: "Dehradun Class"
+                    location: "Delhi Class"
                 }, void 0, false, {
                     fileName: "src/Components/About.jsx",
                     lineNumber: 32,
@@ -703,12 +703,12 @@ var _s = $RefreshSig$();
 const User = ({ name })=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
-    (0, _react.useEffect)(()=>{
-    //API calls
-    //console.log("Use Effect");
+    const [count2] = (0, _react.useState)(1);
+    useEffect(()=>{
+    // Api Calls
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "user-card",
+        className: "user-card m-4 p-4 bg-gray-50 rounded-lg",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: [
@@ -717,42 +717,51 @@ const User = ({ name })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/Components/User.jsx",
-                lineNumber: 12,
-                columnNumber: 5
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: [
+                    "Count2 = ",
+                    count2
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/User.jsx",
+                lineNumber: 14,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: [
                     "Name: ",
-                    name,
-                    " "
+                    name
                 ]
             }, void 0, true, {
                 fileName: "src/Components/User.jsx",
-                lineNumber: 13,
-                columnNumber: 5
+                lineNumber: 15,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "Location: Delhi "
+                children: "Location: Delhi"
             }, void 0, false, {
                 fileName: "src/Components/User.jsx",
-                lineNumber: 14,
-                columnNumber: 5
+                lineNumber: 16,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "Contact: @ExWhyZedd "
+                children: "Contact: @ExWhyZed"
             }, void 0, false, {
                 fileName: "src/Components/User.jsx",
-                lineNumber: 15,
-                columnNumber: 5
+                lineNumber: 17,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/User.jsx",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
-_s(User, "/xL7qdScToREtqzbt5GZ1kHtYjQ=");
+_s(User, "w0//ZewT8X86BMjnMZwvdqkqe+A=");
 _c = User;
 exports.default = User;
 var _c;
@@ -779,35 +788,33 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 class UserClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
-        //create state
         this.state = {
             userInfo: {
-                name: "Dummy Name",
-                location: "Default Location"
+                name: "Dummy",
+                location: "Default"
             }
         };
-        console.log(this.props.name + "child constructor");
+    //console.log(this.props.name + "Child Constructor");
     }
     async componentDidMount() {
-        //     console.log(this.props.name+"child Component Mounted");
+        //console.log(this.props.name + "Child Component Did Mount");
+        // Api call
         const data = await fetch("https://api.github.com/users/userName");
         const json = await data.json();
-        console.log(json);
         this.setState({
             userInfo: json
         });
-        console.log(this.props.name + "child Component Mounted");
+    //console.log(json);
     }
-    componentDidUpdate(prevProps, prevState) {
-        if (this.state.count != prevState.count) this.setstate = this.state.count + 1;
-    // console.log(" componentDidUpdate")
+    componentDidUpdate() {
+    //console.log("Component Did Update");
     }
     componentWillUnmount() {
-    // console.log("Component Unmounted");
+    //console.log("Component Will Unmount");
     }
     render() {
+        console.log(this.props.name + "Child Render");
         const { name, location, avatar_url } = this.state.userInfo;
-        // const {count} = this.state;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "user-card",
             children: [
@@ -815,50 +822,65 @@ class UserClass extends (0, _reactDefault.default).Component {
                     src: avatar_url
                 }, void 0, false, {
                     fileName: "src/Components/UserClass.jsx",
-                    lineNumber: 53,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                     children: [
                         "Name: ",
                         name
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/UserClass.jsx",
-                    lineNumber: 54,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: [
                         "Location: ",
                         location
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/UserClass.jsx",
-                    lineNumber: 55,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    children: "Contact: @ExWhyZedd"
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                    children: "Contact: @ExWhyZed"
                 }, void 0, false, {
                     fileName: "src/Components/UserClass.jsx",
-                    lineNumber: 56,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(UserClass, {}, void 0, false, {
-                    fileName: "src/Components/UserClass.jsx",
-                    lineNumber: 57,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/Components/UserClass.jsx",
-            lineNumber: 52,
+            lineNumber: 44,
             columnNumber: 7
         }, this);
     }
 }
-exports.default = UserClass; /**
+exports.default = UserClass; /****
+ *
+ * --- MOUNTING ----
+ *
+ * Constructor (dummy)
+ * Render (dummy)
+ *      <HTML Dummy >
+ * Component Did MOunt
+ *      <API Call>
+ *      <this.setState> -> State variable is updated
+ *
+ * ---- UPDATE
+ *
+ *      render(APi data)
+ *      <HTML (new API data>)
+ *      ccomponentDid Update
+ *
+ *
+ *
+ *
+ */  /**
  *
  * Parent Constructor
  * Parent render

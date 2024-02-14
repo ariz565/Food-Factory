@@ -19,9 +19,9 @@ const Header = () => {
 
   return (
     <div className="flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-green-50">
-      <div className="logo-container">
-        <img className="w-56" src={LOGO_URL} />
-      </div>
+     <Link to="/" className="logo-container">
+  <img className="w-40" src={LOGO_URL} alt="Logo" />
+</Link>
       <div className="flex items-center">
         <ul className="flex p-4 m-4">
           <li className="px-4">Online Status: {onlineStatus ? "✅" : "🔴"}</li>

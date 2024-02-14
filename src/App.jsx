@@ -68,6 +68,33 @@ const Footer = () => {
   );
 };
 
+const Hero = () => {
+  return (
+    <div
+      className="bg-blue-500 text-white py-16 relative overflow-hidden min-h-screen"
+    >
+      <img
+        src="https://raw.githubusercontent.com/codewithsadee/grilli/master/assets/images/hero-slider-1.jpg"
+        alt="Food Delivery"
+        className="mx-auto absolute inset-0 w-full h-full object-cover"
+      />
+      <div
+        className="container mx-auto text-center relative z-10 flex items-center justify-center h-full"
+      >
+        <div className="text-wrapper bg-gradient-to-r from-transparent to-black opacity-75 rounded-lg py-4 px-8 text-center">
+          {/* Centered text content */}
+          <h1 className="text-3xl font-bold">Food Delivery</h1>
+          <p className="text-lg">Order your favorite food from your favorite restaurants</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+  
+
 //react.Fragment is used to wrap multiple components
 //JSX can have only one parent element
 const AppLayout = () => {
@@ -88,6 +115,7 @@ const AppLayout = () => {
           <UserContext.Provider value={{loggedInUser: userName, setUserName}}> 
       <Header />
       </UserContext.Provider>
+      <Hero/>
       <Outlet />
       <Footer />
         </div>
