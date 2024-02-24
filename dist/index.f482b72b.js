@@ -3196,59 +3196,49 @@ const Footer = ()=>{
     }, undefined);
 };
 _c2 = Footer;
-const Hero = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-blue-500 text-white py-16 relative overflow-hidden min-h-screen",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://raw.githubusercontent.com/codewithsadee/grilli/master/assets/images/hero-slider-1.jpg",
-                alt: "Food Delivery",
-                className: "mx-auto absolute inset-0 w-full h-full object-cover"
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 76,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "container mx-auto text-center relative z-10 flex items-center justify-center h-full",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-wrapper bg-gradient-to-r from-transparent to-black opacity-75 rounded-lg py-4 px-8 text-center",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-3xl font-bold",
-                            children: "Food Delivery"
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 86,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "text-lg",
-                            children: "Order your favorite food from your favorite restaurants"
-                        }, void 0, false, {
-                            fileName: "src/App.jsx",
-                            lineNumber: 87,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 84,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/App.jsx",
-                lineNumber: 81,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/App.jsx",
-        lineNumber: 73,
-        columnNumber: 5
-    }, undefined);
-};
-_c3 = Hero;
+// const Hero = () => {
+//   return (
+//     <section className="bg-white dark:bg-gray-900">
+//       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 min-h-screen">
+//         <div className="mr-auto place-self-center lg:col-span-7 flex flex-col justify-center">
+//           <h1 className="text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-primary-700 to-primary-500 dark:text-white">Payments tool for software companies</h1>
+//           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+//             From checkout to global sales tax compliance, companies around the world use Flowbite to simplify their payment stack.
+//           </p>
+//           <div className="flex space-x-2">
+//             <a href="#" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+//               Get started
+//               <svg
+//                 className="w-5 h-5 ml-2 -mr-1"
+//                 fill="currentColor"
+//                 viewBox="0 0 20 20"
+//                 xmlns="http://www.w3.org/2000/svg"
+//               >
+//                 <path
+//                   fillRule="evenodd"
+//                   d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+//                   clipRule="evenodd"
+//                 />
+//               </svg>
+//             </a>
+//             <a
+//               href="#"
+//               className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+//             >
+//               Speak to Sales
+//             </a>
+//           </div>
+//         </div>
+//         <div className="hidden lg:block lg:col-span-5 overflow-hidden pt-16">
+//           <img
+//             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+//             alt="mockup"
+//           />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
 //react.Fragment is used to wrap multiple components
 //JSX can have only one parent element
 const AppLayout = ()=>{
@@ -3274,49 +3264,44 @@ const AppLayout = ()=>{
                     },
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 116,
+                        lineNumber: 140,
                         columnNumber: 7
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 115,
+                    lineNumber: 139,
                     columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Hero, {}, void 0, false, {
-                    fileName: "src/App.jsx",
-                    lineNumber: 118,
-                    columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 119,
+                    lineNumber: 143,
                     columnNumber: 7
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 120,
+                    lineNumber: 144,
                     columnNumber: 7
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 114,
+            lineNumber: 138,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 112,
+        lineNumber: 136,
         columnNumber: 5
     }, undefined);
 };
 _s(AppLayout, "r4ciXLwRIZNmRjYlu4iYjpyheT0=");
-_c4 = AppLayout;
+_c3 = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 131,
+            lineNumber: 155,
             columnNumber: 11
         }, undefined),
         children: [
@@ -3324,7 +3309,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 135,
+                    lineNumber: 159,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3335,20 +3320,20 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 140,
+                        lineNumber: 164,
                         columnNumber: 27
                     }, void 0),
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 141,
+                            lineNumber: 165,
                             columnNumber: 7
                         }, undefined),
                         ","
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 140,
+                    lineNumber: 164,
                     columnNumber: 7
                 }, undefined)
             },
@@ -3356,7 +3341,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 146,
+                    lineNumber: 170,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3364,7 +3349,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/restaurants/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 150,
+                    lineNumber: 174,
                     columnNumber: 15
                 }, undefined)
             },
@@ -3375,27 +3360,27 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                         children: "Loading..."
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 155,
+                        lineNumber: 179,
                         columnNumber: 27
                     }, void 0),
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Grocery, {}, void 0, false, {
                             fileName: "src/App.jsx",
-                            lineNumber: 156,
+                            lineNumber: 180,
                             columnNumber: 7
                         }, undefined),
                         ","
                     ]
                 }, void 0, true, {
                     fileName: "src/App.jsx",
-                    lineNumber: 155,
+                    lineNumber: 179,
                     columnNumber: 7
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 160,
+            lineNumber: 184,
             columnNumber: 16
         }, undefined)
     }
@@ -3405,19 +3390,18 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.jsx",
-    lineNumber: 165,
+    lineNumber: 189,
     columnNumber: 13
 }, undefined)); // const container = document.getElementById("root");
  // const root = createRoot(container);
  // root.render(<AppLayout />);
  // const rootElement = document.getElementById("root");
  // ReactDOM.render(<AppLayout />, rootElement);
-var _c, _c1, _c2, _c3, _c4;
+var _c, _c1, _c2, _c3;
 $RefreshReg$(_c, "Grocery");
 $RefreshReg$(_c1, "About");
 $RefreshReg$(_c2, "Footer");
-$RefreshReg$(_c3, "Hero");
-$RefreshReg$(_c4, "AppLayout");
+$RefreshReg$(_c3, "AppLayout");
 
   $parcel$ReactRefreshHelpers$2430.postlude(module);
 } finally {
