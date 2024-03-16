@@ -1,4 +1,4 @@
-import React, {lazy,Suspense, useEffect,useState} from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
@@ -6,11 +6,12 @@ import Body from "./Components/Body";
 import Contact from "./Components/Contact";
 import Error from "./Components/Error";
 import RestaurantMenu from "./Components/RestaurantMenu";
-import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import UserContext from "./utils/UserContext";
 // import Grocery from "./Components/Grocery";
-import {Provider} from "react-redux";
+import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+// import Footer from "./Components/Footer";
 
 //chunking
 //code splitting
@@ -19,8 +20,8 @@ import appStore from "./utils/appStore";
 //on demand loading
 //dynamic loading
 
-const Grocery = lazy(()=>import("./Components/Grocery"))
-const About = lazy(()=>import("./Components/About"))
+const Grocery = lazy(() => import("./Components/Grocery"));
+const About = lazy(() => import("./Components/About"));
 
 const Footer = () => {
   // const year = new Date().getFullYear();
@@ -68,8 +69,6 @@ const Footer = () => {
   );
 };
 
-
-
 // const Hero = () => {
 //   return (
 //     <section className="bg-white dark:bg-gray-900">
@@ -114,79 +113,73 @@ const Footer = () => {
 //   );
 // };
 
-
-
-
-  
-
 //react.Fragment is used to wrap multiple components
 //JSX can have only one parent element
 const AppLayout = () => {
-  const[userName, setUserName] = useState();
+  const [userName, setUserName] = useState();
 
   //Authentication
-  useEffect(()=>{
+  useEffect(() => {
     //Make an API call and send username and password
     const data = {
-      name: "ExWhyZed"
-    }
+      name: "ExWhyZed",
+    };
     setUserName(data.name);
-  },[]);
+  }, []);
   return (
     <Provider store={appStore}>
-    
-        <div className="app">
-          <UserContext.Provider value={{loggedInUser: userName, setUserName}}> 
-      <Header />
-      </UserContext.Provider>
-     
-      <Outlet />
-      <Footer />
-        </div>
-        </Provider>
-   
-    
+      <div className="app">
+        <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+          <Header />
+        </UserContext.Provider>
+
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
   );
 };
 
 const appRouter = createBrowserRouter([
-{
-  path:"/",
-  element:<AppLayout/>,
-  children:[
-    {
-      path:"/",
-      element:<Body/>,
-    },
-    {
-      path:"/about",
-      element:
-      <Suspense fallback={<h1>Loading...</h1>}>
-      <About/>,
-      </Suspense>
-    },
-    {
-      path:"/contact",
-      element:<Contact/>,
-    },
-    {
-      path:"/restaurants/:resId",
-      element:<RestaurantMenu/>,
-    },
-    {
-      path:"/Grocery",
-      element:
-      <Suspense fallback={<h1>Loading...</h1>}>
-      <Grocery/>,
-      </Suspense>
-    }
-  ],
-  errorElement:<Error/>,
-},
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: (
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <About />,
+          </Suspense>
+        ),
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+      {
+        path: "/Grocery",
+        element: (
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Grocery />,
+          </Suspense>
+        ),
+      },
+    ],
+    errorElement: <Error />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter}/>);
+root.render(<RouterProvider router={appRouter} />);
 // const container = document.getElementById("root");
 // const root = createRoot(container);
 // root.render(<AppLayout />);

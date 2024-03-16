@@ -1,23 +1,59 @@
+import React from "react";
 import { useEffect, useState } from "react";
-import { MENU_API } from "../utils/constants/";
+import { useParams } from "react-router-dom"; // import useParams for read `resId`
+import {
+  MENU_API,
+  IMG_CDN_URL,
+  ITEM_IMG_CDN_URL,
+  MENU_ITEM_TYPE_KEY,
+  RESTAURANT_TYPE_KEY,
+} from "../utils/constants";
 
+const UseRestaurantMenu = (resId) => {
+  const [restaurant, setRestaurant] = useState(null);
 
+  useEffect(() => {
+    getRestaurantInfo();
+  }, []);
 
-const useRestaurantMenu = (resId) => {
-const [resInfo, setResInfo] = useState(null);
-    //fetch the data
-useEffect(() => {
-    fetchData();
-  },[]);
+  async function getRestaurantInfo() {
+    try {
+      const response = await fetch(MENU_API + resId);
+      const json = await response.json();
 
-const fetchData = async () => {
-    const data = await fetch(MENU_API + resId);
-    const json = await data.json();
-    setResInfo(json.data);
-    };
+      // Set restaurant data
+      const restaurantData =
+        json?.data?.cards
+          ?.map((x) => x.card)
+          ?.find((x) => x && x.card["@type"] === RESTAURANT_TYPE_KEY)?.card
+          ?.info || null;
+      setRestaurant(restaurantData);
 
-    return  resInfo;
+      // Set menu item data
+      const menuItemsData =
+        json?.data?.cards
+          .find((x) => x.groupedCard)
+          ?.groupedCard?.cardGroupMap?.REGULAR?.cards?.map((x) => x.card?.card)
+          ?.filter((x) => x["@type"] == MENU_ITEM_TYPE_KEY)
+          ?.map((x) => x.itemCards)
+          .flat()
+          .map((x) => x.card?.info) || [];
+
+      const uniqueMenuItems = [];
+      menuItemsData.forEach((item) => {
+        if (!uniqueMenuItems.find((x) => x.id === item.id)) {
+          uniqueMenuItems.push(item);
+        }
+      });
+      setMenuItems(uniqueMenuItems);
+    } catch (error) {
+      setMenuItems([]);
+      setRestaurant(null);
+      console.log(error);
+    }
+  }
+
+  return restaurant;
 };
 
-
-export default useRestaurantMenu;
+export default UseRestaurantMenu;
